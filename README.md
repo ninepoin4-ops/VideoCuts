@@ -244,6 +244,6 @@ SQLite 数据库文件位于 `data/db/videocuts.db`，包含以下核心表：
 - **非商业性使用** — 不得将本作品用于商业目的
 - **相同方式共享** — 如果对原作品进行了修改或基于本作品创作了派生作品，则必须以相同的许可协议发布
 
-#### 如果您想使用本项目进行商业运用，请联系15666835265@163.com或ninepoin4@gmail.com
+### 如果您想使用本项目进行商业运用，请联系15666835265@163.com或ninepoin4@gmail.com
 
 详细条款请参阅 [LICENSE](./LICENSE) 文件或访问 https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh
