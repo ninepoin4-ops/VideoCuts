@@ -1,7 +1,8 @@
 # VideoCuts 批量混剪工具
 
 基于 FFmpeg 的批量模板混剪工具。以"模板替换混剪"为核心流程——创建模板（定义段数、时长、转场序列），从素材库随机抽取视频自动适配填入，一键批量生成多个混剪结果。
-<img width="443" alt="局部截取_20260509_163223" src="https://github.com/user-attachments/assets/e96cad4b-bbbf-4a4c-b0ca-2311e625d63a" />
+#### 模板编辑页面
+<img width="643" alt="局部截取_20260509_163223" src="https://github.com/user-attachments/assets/e96cad4b-bbbf-4a4c-b0ca-2311e625d63a" />
 
 ## 功能特性
 
