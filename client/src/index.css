@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-cream text-charcoal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    @apply bg-indigo-light text-indigo-dark;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-indigo text-white px-5 py-2.5 rounded-soft text-sm font-medium
+           transition-all duration-200 hover:bg-indigo-dark
+           active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-indigo/30
+           disabled:opacity-50 disabled:cursor-not-allowed disabled:active:scale-100;
+  }
+
+  .btn-secondary {
+    @apply border border-gray-200 bg-white text-charcoal px-5 py-2.5 rounded-soft text-sm font-medium
+           transition-all duration-200 hover:bg-gray-50 hover:border-gray-300
+           active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-gray-200
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-ghost {
+    @apply text-charcoal px-4 py-2 rounded-soft text-sm font-medium
+           transition-all duration-200 hover:bg-black/[0.04]
+           active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+
+  .btn-danger {
+    @apply bg-red-500 text-white px-4 py-2 rounded-soft text-sm font-medium
+           transition-all duration-200 hover:bg-red-600
+           active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2.5 rounded-soft border border-gray-200 bg-white
+           text-sm text-charcoal placeholder-gray-400
+           transition-all duration-200 focus:outline-none focus:border-indigo focus:ring-2 focus:ring-indigo/10
+           disabled:bg-gray-50 disabled:cursor-not-allowed;
+  }
+
+  .card {
+    @apply bg-white rounded-soft border border-gray-100 shadow-card;
+  }
+
+  .card-hover {
+    @apply card transition-all duration-200 hover:shadow-subtle hover:border-gray-200;
+  }
+
+  /* Drag & drop zone */
+  .drop-zone {
+    @apply border-2 border-dashed border-gray-200 rounded-soft p-8
+           transition-all duration-200 cursor-pointer
+           hover:border-indigo hover:bg-indigo-light/20;
+  }
+
+  .drop-zone-active {
+    @apply border-indigo bg-indigo-light/30;
+  }
+
+  /* Progress bar */
+  .progress-bar {
+    @apply h-1 bg-gray-100 rounded-full overflow-hidden;
+  }
+
+  .progress-bar-fill {
+    @apply h-full bg-indigo rounded-full transition-all duration-500 ease-out;
+  }
+
+  .progress-bar-fill-success {
+    @apply h-full bg-sage rounded-full transition-all duration-500 ease-out;
+  }
+}
